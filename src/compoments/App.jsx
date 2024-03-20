@@ -21,7 +21,7 @@ class Graph {
 export default class App extends Component {
   render() {
     return (
-      <Function func={new Graph((x, y) => y, (x, y) => x*x)} height="800px" width="800px" weight={5}/>
+      <Function func={new Graph((x, y) => y, (x, y) => x*x)} height="100px" width="100px" weight={5}/>
     )
   }
 }

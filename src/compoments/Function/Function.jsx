@@ -16,6 +16,7 @@ export default class Function extends Component {
     const {width, height} = this.canvasRef.current
     for (let x = -width/2; x < width/2; x++){
       for (let y = height/2; y > -height/2; y--){
+        console.log(x, y)
         if (this.func.belongs(x, y, 2)){
           ctx.fillRect(x, y, this.weight, this.weight)
         }
