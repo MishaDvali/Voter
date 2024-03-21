@@ -13,7 +13,6 @@ class Graph {
             default :
                 return (this.right(x, y) <= this.left(x, y) + accuracy/2
                         && this.right(x,y) >= this.left(x, y) - accuracy/2)
-                break;
         }
     }
 }
@@ -21,7 +20,7 @@ class Graph {
 export default class App extends Component {
   render() {
     return (
-      <Function func={new Graph((x, y) => y, (x, y) => x*x)} height="100px" width="100px" weight={5}/>
+      <Function func={new Graph((x, y) => y, (x, y) => x*x)} height="800px" width="800px" weight={3} zoom={0.1} posX={100} posY={100}/>
     )
   }
 }
